@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC LIGHTNING WORLD SDN BHD</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img {
+            width: 1200px; /* Adjust the size */
+            height: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to PC LIGHTNING WORLD SDN BHD</h1>
+
+    <!-- Image is displayed immediately -->
+    <img src="image.jpg" alt="Displayed Image">
+
+    <!-- Original Link (Will Change Dynamically) -->
+    <br><br>
+    <a id="myLink" href="file:///C:/Users/joyce/OneDrive/%E6%96%87%E6%A1%A3/Desktop/COMPANY%20PROFILE/index.html">
+        Old Link Name
+    </a>
+
+    <script>
+        // Ensure the script runs after the page fully loads
+        document.addEventListener("DOMContentLoaded", function() {
+            let link = document.getElementById("myLink");
+            if (link) {
+                link.innerText = "Visit PC Lightning";  // Update link text
+                link.href = "https://www.pclightning.com";  // Update link URL
+            } else {
+                console.error("Link element not found!");
+            }
+        });
+    </script>
+
+</body>
+</html>
